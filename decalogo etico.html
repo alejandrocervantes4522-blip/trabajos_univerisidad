@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decálogo Ético - Ingeniería de Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+        }
+
+        .bg-personal { border-left: 4px solid #3b82f6; } /* Azul */
+        .bg-social { border-left: 4px solid #10b981; }   /* Verde */
+        .bg-pro { border-left: 4px solid #f59e0b; }      /* Dorado */
+
+        .glow-blue { text-shadow: 0 0 10px rgba(59, 130, 246, 0.5); }
+        .glow-green { text-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
+        .glow-gold { text-shadow: 0 0 10px rgba(245, 158, 11, 0.5); }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 code-font tracking-tight">
+                &lt;Decálogo_Ético /&gt;
+            </h1>
+            <p class="text-slate-400 text-lg">Compromisos de Excelencia e Integridad para la Ingeniería de Software</p>
+            <div class="w-24 h-1 bg-blue-500 mx-auto mt-6 rounded-full"></div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- SECCIÓN 1: ÉTICA PERSONAL -->
+            <section class="space-y-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <i class="fas fa-user-shield text-blue-400 text-2xl"></i>
+                    <h2 class="text-xl font-bold uppercase tracking-widest text-blue-400 glow-blue">Ética Personal</h2>
+                </div>
+                
+                <div class="card p-5 rounded-xl bg-personal">
+                    <span class="code-font text-blue-400 text-sm">01 //</span>
+                    <h3 class="font-bold text-lg mb-2">Autenticidad de Autoría</h3>
+                    <p class="text-slate-400 text-sm">Respetar la propiedad intelectual y licencias; no atribuirme código que no he creado.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-personal">
+                    <span class="code-font text-blue-400 text-sm">02 //</span>
+                    <h3 class="font-bold text-lg mb-2">Actualización Constante</h3>
+                    <p class="text-slate-400 text-sm">Mantener mi stack tecnológico al día para ofrecer soluciones modernas y eficientes.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-personal">
+                    <span class="code-font text-blue-400 text-sm">03 //</span>
+                    <h3 class="font-bold text-lg mb-2">Resiliencia y Honestidad</h3>
+                    <p class="text-slate-400 text-sm">Reconocer mis errores técnicos de forma transparente y trabajar activamente en su corrección.</p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 2: ÉTICA SOCIAL -->
+            <section class="space-y-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <i class="fas fa-users text-green-400 text-2xl"></i>
+                    <h2 class="text-xl font-bold uppercase tracking-widest text-green-400 glow-green">Ética Social</h2>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-social">
+                    <span class="code-font text-green-400 text-sm">04 //</span>
+                    <h3 class="font-bold text-lg mb-2">Inclusión por Diseño</h3>
+                    <p class="text-slate-400 text-sm">Desarrollar software accesible para todos, eliminando barreras de uso y sesgos algorítmicos.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-social">
+                    <span class="code-font text-green-400 text-sm">05 //</span>
+                    <h3 class="font-bold text-lg mb-2">Privacidad por Defecto</h3>
+                    <p class="text-slate-400 text-sm">Garantizar que la protección de datos sea el pilar central de cada sistema que construya.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-social">
+                    <span class="code-font text-green-400 text-sm">06 //</span>
+                    <h3 class="font-bold text-lg mb-2">Impacto Positivo</h3>
+                    <p class="text-slate-400 text-sm">Rechazar proyectos destinados a la desinformación o manipulación social.</p>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 3: ÉTICA PROFESIONAL -->
+            <section class="space-y-6">
+                <div class="flex items-center space-x-3 mb-4">
+                    <i class="fas fa-code text-amber-400 text-2xl"></i>
+                    <h2 class="text-xl font-bold uppercase tracking-widest text-amber-400 glow-gold">Ética Profesional</h2>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-pro">
+                    <span class="code-font text-amber-400 text-sm">07 //</span>
+                    <h3 class="font-bold text-lg mb-2">Seguridad Crítica</h3>
+                    <p class="text-slate-400 text-sm">No comprometer la integridad del sistema por plazos de entrega; la seguridad es prioridad.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-pro">
+                    <span class="code-font text-amber-400 text-sm">08 //</span>
+                    <h3 class="font-bold text-lg mb-2">Clean Code & Docs</h3>
+                    <p class="text-slate-400 text-sm">Escribir código mantenible y documentado, respetando el tiempo de los futuros desarrolladores.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-pro">
+                    <span class="code-font text-amber-400 text-sm">09 //</span>
+                    <h3 class="font-bold text-lg mb-2">Calidad Rigurosa (QA)</h3>
+                    <p class="text-slate-400 text-sm">Realizar pruebas exhaustivas para asegurar la estabilidad y el rendimiento del software.</p>
+                </div>
+
+                <div class="card p-5 rounded-xl bg-pro">
+                    <span class="code-font text-amber-400 text-sm">10 //</span>
+                    <h3 class="font-bold text-lg mb-2">Secreto Profesional</h3>
+                    <p class="text-slate-400 text-sm">Resguardar con total hermetismo la información estratégica y datos sensibles del cliente.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+            <p>© 2024 - Ingeniero en Desarrollo de Software</p>
+            <p class="code-font mt-4 md:mt-0">status: <span class="text-green-500">Compromiso_Activo</span></p>
+        </footer>
+    </div>
+
+</body>
+</html>
